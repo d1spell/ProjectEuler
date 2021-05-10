@@ -2,8 +2,10 @@
 #
 # The prime factors of 13195 are 5, 7, 13 and 29.
 # What is the largest prime factor of the number 600851475143 ?
+from assistant import execution_time
 
 
+@execution_time
 def solution(n=600851475143):
     d = 2
     while d * d <= n:
@@ -17,4 +19,5 @@ def solution(n=600851475143):
         return n
 
 
-print(solution())
+if __name__ == '__main__':
+    print(solution())
